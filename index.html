@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary Breakdown Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Salary Breakdown Tool</h2>
+
+    <div class="form">
+      <input type="number" id="ctc" placeholder="Annual CTC (₹)">
+      <button id="calculate">Calculate</button>
+    </div>
+
+    <div class="result">
+      <p>Basic Salary: ₹<span id="basic">0</span></p>
+      <p>HRA: ₹<span id="hra">0</span></p>
+      <p>PF: ₹<span id="pf">0</span></p>
+      <p>Tax (Approx): ₹<span id="tax">0</span></p>
+      <hr>
+      <h3>Monthly In-Hand: ₹<span id="inhand">0</span></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+
+Basic = 40% of CTC
+
+HRA = 40% of Basic
+
+PF = 12% of Basic
+
+Tax = 10% of CTC (approx)
+
+In-hand = (CTC − PF − Tax) ÷ 12
+
+ -->
